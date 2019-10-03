@@ -19,10 +19,10 @@ var app = express();
 var routes = require("./routes/view");
 
 // Parse request body as JSON
-// app.use(express.urlencoded({ extended: true }));
-// app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 // Make public a static folder
-// app.use(express.static("public"));
+app.use(express.static("public"));
 
 // Connect Handlebars to our Express app
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
