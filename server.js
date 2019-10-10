@@ -16,7 +16,7 @@ var PORT = process.env.PORT || 3000;
 var app = express();
 
 // Require our routes
-var routes = require("./routes/view");
+var routes = require("./routes");
 
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
