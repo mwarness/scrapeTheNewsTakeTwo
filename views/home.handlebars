@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="/">Mongo Scraper</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" id="navColor">
+  <a class="navbar-brand" href="/">Mongo Scraper: Philadelphia Inquirer Edition</a>
   <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false"
     aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -16,10 +16,10 @@
         <a class="nav-link" href="/saved">Saved Articles</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-danger scrape-new">SCRAPE NEW ARTICLES!</a>
+        <a class="btn btn-danger scrape-new">Scrape Some News</a>
       </li>
       <li class="nav-item">
-        <a class="btn btn-danger clear">CLEAR ARTICLES!</a>
+        <a class="btn btn-danger clear">Clear Articles</a>
       </li>
     </ul>
   </div>
@@ -32,7 +32,7 @@
   </div>
   <div class="caption">
     <h1>Mongo Scraper</h1>
-    <p>New York Times Edition</p>
+    <p>Philadelphia Inquirer Edition</p>
   </div>
 </div>
 <div class="container-fluid article-container">
@@ -48,15 +48,15 @@
   </div>
   {{/each}} {{#unless articles.length}}
   <div class='alert alert-warning text-center'>
-    <h4>Uh Oh. Looks like we don't have any new articles.</h4>
+    <h4>No articles scraped yet!</h4>
   </div>
   <div class="card">
     <div class="card-header text-center">
-      <h3>What Would You Like To Do?</h3>
+      <h3>What would you like to see?</h3>
     </div>
     <div class="card-body text-center">
       <h4>
-        <a class="scrape-new">Try Scraping New Articles</a>
+        <a class="scrape-new">Scrape New Articles</a>
       </h4>
       <h4>
         <a href="/saved">Go to Saved Articles</a>
@@ -68,11 +68,13 @@
 
 <footer class="footer">
   <div class="container">
-    <p>New York Times Mongo Scraper</p>
+    <p class="text-center">Mongo Scraper: Philadelphia Inquirer Edition</p>
+    
+
   </div>
 </footer>
 
-{{!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-<script src="/assets/javascript/index.js"></script> --}}
+<script src="/assets/javascript/index.js"></script>

@@ -5,11 +5,12 @@ html {
   
   body {
     margin-bottom: 80px;
-    background-image: url("../images/paper.png");
+  
   }
+
   
   .card a:not([href]):not([tabindex]).scrape-new {
-    color: #2196F3;
+    color:#2196F3;
   }
   
   .footer {
@@ -17,8 +18,8 @@ html {
     bottom: 0;
     width: 100%;
     height: 80px;
-    color: white;
-    background-color: #2196f3;
+    color: black;
+    background-color: lightgray;
   }
   
   .navbar {
@@ -30,8 +31,8 @@ html {
     width: 100%;
     height: 500px;
     padding: 0;
-    font-family: "Cormorant SC";
-    box-shadow: 10px 5px 20px 2px lightslategrey;
+    font-family: "Quicksand";
+    box-shadow: 10px 5px 20px 2px slategrey;
   }
   
   .jumbotron .overlay {
@@ -45,11 +46,11 @@ html {
     opacity: 0.7;
   }
   
-  .jumbotron .background-image {
+  /* .jumbotron .background-image {
     height: 100%;
     background-image: url("../images/newspaper.jpg");
     background-size: cover;
-  }
+  } */
   
   .jumbotron .caption {
     position: absolute;
@@ -61,6 +62,7 @@ html {
   .jumbotron .caption h1,
   .jumbotron .caption p {
     color: white;
+    font-family:"Quicksand";
   }
   
   .jumbotron h1 {
@@ -83,14 +85,14 @@ html {
   }
   
   .card .card-header {
-    background-color: #2196f3;
+    background-color: lightgray;
     position: relative;
     padding-top: 30px;
     padding-bottom: 30px;
   }
   
   .card .card-header h3 {
-    color: white;
+    color:black;
   }
   
   .card .card-header .btn {
@@ -108,7 +110,7 @@ html {
   }
   
   .card .card-header .article-link {
-    color: white;
+    color:black;
     display: inline-block;
     width: 80%;
   }
@@ -123,7 +125,7 @@ html {
     padding-left: 10px;
     margin: 0;
     font-weight: 800;
-    background: #0c7cd5;
+    background: slategray;
   }
   
   .navbar-nav > li > a.scrape-new,
@@ -132,16 +134,16 @@ html {
     margin-top: 10px;
     margin-left: 10px;
     font-weight: 800;
-    color: white;
+    color: black;
   }
   
   .navbar-nav > li > a.scrape-new:hover,
   .navbar-nav > li > a.clear:hover {
-    background: #4caf50;
+    background: lightpink;
   }
   
   .navbar-nav > li > a.scrape-new:active {
-    background: #e51c23;
+    background: lightsteelblue;
   }
   
   .scrape-new {
@@ -166,4 +168,11 @@ html {
   .note.list-group-item .btn {
     position: relative;
     bottom: 10px;
+  }
+  .alert-warning{
+    background-color:slategray !important;
+  }
+  #navColor{
+    background-color:black !important;
+    color: White !important;
   }
