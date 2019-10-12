@@ -7,6 +7,6 @@
 
 
 module.exports = {
-    Headline: require("./Headline"),
-    Note: require("./Note")
+    Headline: require("./headline"),
+    Note: require("./note")
   };
