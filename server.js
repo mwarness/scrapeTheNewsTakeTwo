@@ -29,13 +29,15 @@ app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // Have every request go through our route middleware
-app.use(routes);
+// app.use(routes);
 
 // If deployed, use the deployed database. Otherwise use the local mongoHeadlines database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
 
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI);
+
+app.use(routes);
 
 // Listen on the port
 app.listen(PORT, function() {
